@@ -8,6 +8,7 @@ exports.up = function (knex) {
 
     table.integer("theater_id").unsigned().notNullable();
     table.foreign("theater_id").references("theater_id").inTable("theaters");
+
   });
 };
 
